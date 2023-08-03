@@ -1,38 +1,38 @@
-extends ../layouts/default.pug
-block config
-  - var bodyClass = 'sb-nav-fixed'
-  - var pageTitle = 'Sample Page​';
-  - var sidebarGroup = 'Overview'
-  - var sidenavStyle = 'sb-sidenav-dark'
+//- extends ../layouts/default.pug
+//- block config
+//-   - var bodyClass = 'sb-nav-fixed'
+//-   - var pageTitle = 'Sample Page​';
+//-   - var sidebarGroup = 'Overview'
+//-   - var sidenavStyle = 'sb-sidenav-dark'
 
-block content
-  .container-fluid.px-4
-    include includes/page-header.pug
-    .row
-      .col-md-12
-        .card.h-100
-          .card-header
-            |    Intro
-          .card-body
-            p This is card text
-            ul
-              li  This is a list item
-      p
-      .col-md-12
-        .card.h-100
-          .card-header
-            |    Header 2
-          .card-body
-            .row
-             .col-sm-6          
-              p test
-              img.d-block.w-50(src='assets/img/doesnotexist.png')
+//- block content
+//-   .container-fluid.px-4
+//-     include includes/page-header.pug
+//-     .row
+//-       .col-md-12
+//-         .card.h-100
+//-           .card-header
+//-             |    Intro
+//-           .card-body
+//-             p This is card text
+//-             ul
+//-               li  This is a list item
+//-       p
+//-       .col-md-12
+//-         .card.h-100
+//-           .card-header
+//-             |    Header 2
+//-           .card-body
+//-             .row
+//-              .col-sm-6          
+//-               p test
+//-               img.d-block.w-50(src='assets/img/doesnotexist.png')
 
-             .col-sm-6
-                video.d-block.w-100(controls='' loop='')
-                    source(src='assets/img/doesnotexist.mp4' type="video/mp4")        
+//-              .col-sm-6
+//-                 video.d-block.w-100(controls='' loop='')
+//-                     source(src='assets/img/doesnotexist.mp4' type="video/mp4")        
 
-    P    
-append scripts    
-  //- Load Simple DataTables Scripts
-  script(src='https://polyfill.io/v3/polyfill.min.js?features=es6')
+//-     P    
+//- append scripts    
+//-   //- Load Simple DataTables Scripts
+//-   script(src='https://polyfill.io/v3/polyfill.min.js?features=es6')

@@ -14,26 +14,8 @@ block content
     .container-fluid.px-4
         include includes/page-header.pug
         .row
-            .col-md-6
-                b stuff
+            .col-md-12
+                p This site is still under construction! Thanks for visiting 
                 br
-                br
-                h3 test
-                ul
-                    li line item
-                br
-                h3 i am
-                ul
-                    li Cool
-
-            .col-md-6
-                #carouselExampleIndicators.carousel.slide(data-bs-ride='carousel')
-                    .carousel-inner
-                        .carousel-item.active
-                            img.d-block.w-100(src='assets/img/doesntexist.png' alt='test')
-                    button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
-                        span.carousel-control-prev-icon(aria-hidden='true')
-                        span.visually-hidden Previous
-                    button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
-                        span.carousel-control-next-icon(aria-hidden='true')
-                        span.visually-hidden Next
+                video.d-block.w-60(controls='' loop='' autoplay='true')
+                        source(src='assets/img/walkingcat.mp4' type="video/mp4")  

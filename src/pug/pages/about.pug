@@ -1,0 +1,114 @@
+extends ../layouts/default.pug
+block config
+  - var bodyClass = 'sb-nav-fixed'
+  - var pageTitle = 'About Us​';
+  - var sidebarGroup = 'About'
+  - var sidenavStyle = 'sb-sidenav-dark'
+block content
+  .container-fluid.px-4
+    include includes/page-header.pug
+    .row
+      .col-md-12
+        .card.h-80
+          .card-header
+            |    About Us
+          .card-body
+            p TL;DR I'm going for a nose around the EU and bringing my cat with me.
+            p
+            | Welcome to Jack and Grimm Travel, my captivating travel blog chronicling my unforgettable adventure of following my fat 
+            | cat Grimm around Europe (mostly the EU I'm not arsed with visas). As a lazy prick with nothing better on I decided 
+            | to go for a bit of a nose around Europe for a bit, see what all the fuss is about. Given I'd rather Grimm was 
+            | alive and well when I get back I have opted to bring the lumpy grumpy with me.
+            br
+            p
+            | In this blog, we share our escapades as we traverse the diverse landscapes and rich cultures of Europe in our 
+            | probably piece of crap van (I don't have the van yet). Together, I'll probably carry him as I look at cool shit
+            | and he'll give out stink about literally everything and then go for a snooze in the sun. I've great intentions of
+            | leashing him and going on hikes and stuff but he's a lazy pig so I don't see it happening.
+            | Our journey knows no boundaries except the EU (sorry Turkiye, you look beautiful though).
+            br
+            p
+            | As I'm fond of the little pud I've put some effort into thinking about his comfort and safety throughout our 
+            | travels by teaching him boxing, the only fighting style capable of besting a bear. He'll have his own little 
+            | suite in the van and a dedicated place to soak up rays where I can rub his fat cat belly and enjoy how warm he is.
+            br
+            p
+            | Myself, I'll be knocking about at whatever sounds interesting (recommend me stuff!). I'll be detailing the van
+            | conversion, talking about whatever music I'm listening to or books I'm reading and attempting to work odd jobs 
+            | to pay for diesel and food in between pretending France is nice and it's only Parisians who give them a bad name.
+            br
+            p
+            | I don't really give a shit about inspiring people or whatever I'm just here to document a good time, if you're enjoying 
+            | the blog make sure to check out the instagram (@jackandgrimmtravel) but it's probably going to be similar to here.
+            br 
+            p
+            | If you're enjoying the blog and going to be someplace we're heading reach out to me on instagram, would definitely 
+            | love to connect with any fans for a pint or a game of Commander.
+            br
+            p 
+            | I'm going to leave the closing ChatGPT gave me below because it's cringe as fuck, is this what bloggers write like?
+            | Anyways, enjoy the blog Kings 👑.
+            br 
+            p
+            | - Jack and Grimm
+            br
+            p
+            | Jack and Grimm Travel aims to inspire and assist fellow pet parents who dream of embarking 
+            | on similar adventures with their furry pals. Join us as we navigate the trials and triumphs of van life,
+            | discovering pet-friendly havens, and forging cherished memories along the way. Through heartwarming tales, 
+            | practical tips, and stunning visuals, we hope to kindle the spirit of wanderlust in all our readers.
+            | So, whether you're an avid traveler, a devoted pet parent, or simply seeking inspiration for your own 
+            | journeys, Jack and Grimm Travel promises to be an enchanting blend of wanderlust and feline charm. Thank you for 
+            | being a part of our extraordinary odyssey across Europe on four paws!
+            | Pawsitively yours,
+
+      .col-md-6
+        .card.h-100
+          .card-header
+            |    Jack
+          .card-body
+            .row
+             .col-sm-12
+              img.d-block.w-100(src='assets/img/myhandsomemug.jpg')
+              p 
+              | An Irishman soon to be lost abroad, I originally hail from the futuristic lands of Leitrim. Growing up on a diet 
+              | of spuds and guinness, I somehow overcame crippling malnourishment to become a fine lad of normal proportions 
+              | (all Irish people have big heads that's not on me).
+              br
+              p 
+              | I spent my youth playing GAA, failing to chase women and generally being a massive nerd building PCs and sometimes
+              | fixing phones and stuff like that, I've always had great interest in maths, science and computers which served me 
+              | well in getting into university and learning to do stuff like make savage websites like this one (I do commissions).
+              | Unfortunately once I got to Galway I discovered pints, drugs (sorry Mam) and goth girls and promply did fuck all college 
+              | work and nearly dropped out but I powered through and am now the proud owner of a sheet of paper which says I can do 
+              | Engineering.
+              br
+              p 
+              | I've been working as an Engineer for the past 3 years but after getting sick of literally everything getting moldy 
+              | all the time I decided it was time for a change! Then my girlfriend split up with me so I'm following through 
+              | and potentially fucking my life up even more! Follow the journey to see how I get on.
+      .col-md-6
+        .card.h-100
+          .card-header
+            |    Grimm
+          .card-body
+            .row
+             .col-sm-12
+              img.d-block.w-75.mx-auto(src='assets/img/grimpics/mybaby.png')
+              p 
+              | Grimm, whos full name is actually Grimalkin is a fat and very grumpy cat who's very often sharp Grimm has been a good 
+              | friend of mine since I first met him in the spring of 2021. He was kitten sized when we met but as no one knows 
+              | when he was born he's potentially pretty old, though we think he's 2.
+              img.d-block.w-25.mx-auto(src='assets/img/memes/somekindofgenius.jpg')
+              p 
+              | Grimm spent his early life living in my uncles shed until my folks thought surprising me with a cat was an appropriate 
+              | graduation gift and here we are. Now he uses me as a bench and gets fucking pissed if I'm doing something where he 
+              | can't sit on me. He also gets very upset when left along and loves dreamies.
+              br
+              p 
+              | Despite having never seen a fish before his fish is his favourite toy to murder (expect guest appearances in future!).
+              | Grimm likes to drink my water and sneak out onto the balcony so that he smells of fresh air so I hope he enjoys the 
+              | travel as he has no say in the matter.
+append scripts    
+  //- Load Simple DataTables Scripts
+  script(src='https://polyfill.io/v3/polyfill.min.js?features=es6')
