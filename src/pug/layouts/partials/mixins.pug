@@ -1,0 +1,25 @@
+mixin download-doc (url,title)
+    .card.mb-3
+      .row.g-0
+        .col-md-3.col.align-self-center.d-flex.justify-content-center
+          i.fa.fa-file-word.fa-6x
+        .col-md-9
+          .card-body
+            h5.card-title #{title}
+            p.card-text
+                if block
+                    block
+            a.card-link(href=url download='') Download
+
+mixin download-pdf (url,title)
+    .card.mb-3
+      .row.g-0
+        .col-md-3.col.align-self-center.d-flex.justify-content-center
+          i.fa.fa-file-pdf.fa-6x
+        .col-md-9
+          .card-body
+            h5.card-title #{title}
+            p.card-text
+                if block
+                    block
+            a.card-link(href=url download='') Download

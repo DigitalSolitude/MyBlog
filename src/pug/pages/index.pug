@@ -1,0 +1,39 @@
+extends ../layouts/default.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = 'Welcome to my blog';
+    - var index = true;
+    - var sidenavStyle = 'sb-sidenav-dark'
+    
+prepend css
+    //- Load Simple DataTables Stylesheet
+    link(href='https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css', rel='stylesheet')
+
+block content
+    .container-fluid.px-4
+        include includes/page-header.pug
+        .row
+            .col-md-6
+                b stuff
+                br
+                br
+                h3 test
+                ul
+                    li line item
+                br
+                h3 i am
+                ul
+                    li Cool
+
+            .col-md-6
+                #carouselExampleIndicators.carousel.slide(data-bs-ride='carousel')
+                    .carousel-inner
+                        .carousel-item.active
+                            img.d-block.w-100(src='assets/img/doesntexist.png' alt='test')
+                    button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.visually-hidden Previous
+                    button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.visually-hidden Next
